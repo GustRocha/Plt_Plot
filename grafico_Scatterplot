@@ -1,0 +1,23 @@
+import matplotlib.pyplot as plt
+
+x1 = [1, 2, 3, 4, 5]
+y1 = [2, 4, 4, 6, 2]
+
+x2 = [6, 7, 8, 9, 10]
+y2 = [9, 2, 15, 3, 7]
+
+titulo = " Grafico Scatterplot "
+eixox = " Participantes "
+eixoy = " Valores "
+
+#Legendas
+plt.title(titulo)
+plt.xlabel(eixox)
+plt.ylabel(eixoy)
+
+plt.scatter(x1, y1, label = "Grupo 1")
+plt.scatter(x2, y2, label = "Grupo 2")
+plt.plot(x1, y1, color = "g")
+plt.plot(x2, y2, color = "y")
+plt.legend()
+plt.show()
